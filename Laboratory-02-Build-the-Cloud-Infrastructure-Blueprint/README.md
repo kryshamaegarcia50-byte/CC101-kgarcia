@@ -21,11 +21,16 @@ document and justify every design decision."*
 ## Objectives
 At the end of this laboratory activity, the goal was to be able to:
 - Explain the major components of cloud infrastructure.
+  
 - Investigate the hardware and software resources available in a Linux 
   environment.
+  
 - Differentiate compute, storage, networking, and identity resources.
+  
 - Interpret the relationship between cloud infrastructure components.
+  
 - Create professional technical documentation using Markdown.
+  
 - Continue building a structured GitHub Cloud Computing Portfolio.
 
 ## Cloud Infrastructure Components
@@ -61,17 +66,28 @@ Five main components were investigated on the KillerCoda Linux server:
 
 ## Skills Learned
 -Create and configure cloud infrastructure.
+
 -Connect to and manage a Linux environment.
+
 -Execute Linux commands through the terminal.
+
 -Install and configure required software.
+
 -Verify whether services are running correctly.
+
 -Use GitHub to store and document project work.
+
 -Write technical documentation using Markdown.
 
 ## Challenges Encountered
 Some challenges encountered during the project included:
+
 -Configuring the cloud infrastructure correctly.
+
 -Understanding and executing Linux commands.
+
 -Troubleshooting configuration or connection problems.
+
 -Making sure the required services were running correctly.
+
 -Verifying that the final setup worked as expected.
