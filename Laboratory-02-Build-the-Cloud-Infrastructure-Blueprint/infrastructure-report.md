@@ -1,5 +1,5 @@
-# OPERATING SYSTEM
-
+## OPERATING SYSTEM
+```
 PRETTY_NAME="Ubuntu 24.04.4 LTS"
 NAME="Ubuntu"
 VERSION_ID="24.04"
@@ -13,13 +13,13 @@ BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
 PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
 UBUNTU_CODENAME=noble
 LOGO=ubuntu-logo
-
+```
 
 ## KERNEL VERSION
-6.8.0-138-generic
+`6.8.0-138-generic`
 
-##CPU MODEL 
-Intel Xeon E312xx (Sandy Bridge, IBRS update)
+## CPU MODEL 
+`Intel Xeon E312xx (Sandy Bridge, IBRS update)`
 
 ## Number of CPU Cores
 `1`
@@ -30,6 +30,7 @@ Mem:           1.9Gi       415Mi       847Mi       1.1Mi       808Mi       1.5Gi
 Swap:          1.0Gi          0B       1.0Gi
 
 ## Disk Capacity
+```
 Filesystem      Size  Used Avail Use% Mounted on
 tmpfs           191M  996K  190M   1% /run
 /dev/vda1        19G  5.4G   13G  30% /
@@ -37,8 +38,10 @@ tmpfs           952M   84K  952M   1% /dev/shm
 tmpfs           5.0M     0  5.0M   0% /run/lock
 /dev/vda16      881M  117M  703M  15% /boot
 /dev/vda15      105M  6.2M   99M   6% /boot/efi
+```
 
 ## Mounted File Systems 
+```
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
 udev on /dev type devtmpfs (rw,nosuid,relatime,size=954836k,nr_inodes=238709,mode=755,inode64)
@@ -61,11 +64,11 @@ configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
 /dev/vda16 on /boot type ext4 (rw,relatime)
 /dev/vda15 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
 binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
-
+```
 
 ## Hostname
-ubuntu
+`ubuntu`
 
 
 ## IP Address
-172.30.1.2 172.17.0.1 
+`172.30.1.2 172.17.0.1 `
