@@ -25,9 +25,10 @@ LOGO=ubuntu-logo
 `1`
 
 ## Total RAM
-               total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       415Mi       847Mi       1.1Mi       808Mi       1.5Gi
-Swap:          1.0Gi          0B       1.0Gi
+| | total | used | free | shared | buff/cache | available |
+|---|---|---|---|---|---|---|
+| **Mem** | 1.9Gi | 415Mi | 847Mi | 1.1Mi | 808Mi | 1.5Gi |
+| **Swap** | 1.0Gi | 0B | 1.0Gi | — | — | — |
 
 ## Disk Capacity
 ```
