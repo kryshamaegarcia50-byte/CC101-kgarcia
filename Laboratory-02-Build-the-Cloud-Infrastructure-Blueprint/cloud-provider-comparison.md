@@ -7,6 +7,7 @@
 | Identity and Access Management (IAM) | AWS IAM | Microsoft Entra ID (formerly Azure AD) | Google Cloud IAM |
 
 **1. Which cloud provider offers the broadest range of services? Explain your answer.**
+
 AWS is generally considered to offer one of the broadest ranges of cloud services. It provides a large selection of compute, storage, networking, database, security, analytics, machine learning, and other cloud services. This makes AWS suitable for organizations with many different cloud requirements.
 
 **2. Which cloud platform would you recommend for an organization that primarily uses Microsoft products? Why?**
