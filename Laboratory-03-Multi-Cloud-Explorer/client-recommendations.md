@@ -49,3 +49,14 @@ AWS is a strong choice for a multinational e-commerce company because it provide
 - Amazon EC2 – for running application servers.
 - Elastic Load Balancing – for distributing traffic across servers.
 - Amazon EC2 Auto Scaling – for automatically adjusting computing capacity based on demand.
+
+## Checkpoint 6 – Multi-Cloud Decision Matrix
+
+| Business Requirement | Recommended Platform | Justification |
+|---|---|---|
+| **Startup Company** | Google Cloud Platform (GCP) | GCP provides scalable and managed services that can help startups control costs while allowing applications to grow as demand increases. |
+| **Enterprise Organization** | Amazon Web Services (AWS) | AWS offers a broad range of services, global infrastructure, and enterprise-level capabilities suitable for large and complex organizations. |
+| **Microsoft Environment** | Microsoft Azure | Azure provides strong integration with Microsoft products such as Windows Server, Microsoft 365, and Microsoft Entra ID. |
+| **AI / Machine Learning** | Google Cloud Platform (GCP) | GCP provides strong AI and machine learning services, including Vertex AI, along with infrastructure for demanding workloads. |
+| **Kubernetes Deployment** | Google Cloud Platform (GCP) | GCP is a strong choice for Kubernetes deployment because Google originally developed Kubernetes and provides Google Kubernetes Engine (GKE). |
+| **Global Web Application** | Amazon Web Services (AWS) | AWS provides extensive global infrastructure, high availability, load balancing, and automatic scaling for applications serving users worldwide. |
