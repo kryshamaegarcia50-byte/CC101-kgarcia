@@ -31,6 +31,5 @@ GCP is commonly used for data analytics, artificial intelligence and machine lea
 
 ## Screenshot
 
-![Google Cloud Official Homepage](screenshots/gcp.png)
+<img width="1885" height="911" alt="gcp-homepage" src="https://github.com/kryshamaegarcia50-byte/CC101-kgarcia/blob/main/Laboratory-03-Multi-Cloud-Explorer/screenshots/gcp-homepage.png?raw=true" />
 
-*Figure 1. Google Cloud official website or management console.*
