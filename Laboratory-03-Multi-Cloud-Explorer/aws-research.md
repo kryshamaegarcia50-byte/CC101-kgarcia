@@ -31,6 +31,6 @@ AWS is commonly used by enterprises for web and mobile applications, data storag
 
 ## Screenshot
 
-<img width="1885" height="911" alt="azure-homepage" src="" />
+<img width="1885" height="911" alt="aws-homepage" src="https://github.com/kryshamaegarcia50-byte/CC101-kgarcia/blob/main/Laboratory-03-Multi-Cloud-Explorer/screenshots/aws-homepage.png?raw=true" />
 
 
