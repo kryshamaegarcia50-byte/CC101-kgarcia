@@ -35,17 +35,14 @@ The Linux server can be migrated to any of these three cloud platforms because a
 ### Terminal Screenshots
 
 #### Operating System
+<img width="1885" height="911" alt="Operating System" src="https://github.com/kryshamaegarcia50-byte/CC101-kgarcia/blob/main/Laboratory-03-Multi-Cloud-Explorer/screenshots/Terminal1.png?raw=true" />
 
-![Operating System](screenshots/os-info.png)
+
 
 #### CPU Information
+<img width="1885" height="911" alt="CPU Information" src="https://github.com/kryshamaegarcia50-byte/CC101-kgarcia/blob/main/Laboratory-03-Multi-Cloud-Explorer/screenshots/Terminal2.png?raw=true" />
 
-![CPU Information](screenshots/cpu-info.png)
+#### Memory & Disk Space
+<img width="1885" height="911" alt="Memory & Disk Space" src="https://github.com/kryshamaegarcia50-byte/CC101-kgarcia/blob/main/Laboratory-03-Multi-Cloud-Explorer/screenshots/Terminal3.png?raw=true" />
 
-#### Memory
 
-![Memory Information](screenshots/memory-info.png)
-
-#### Disk Space
-
-![Disk Space](screenshots/disk-info.png)
