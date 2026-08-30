@@ -31,5 +31,5 @@ Azure is commonly used for enterprise applications, virtual machines, databases,
 
 ## Screenshot
 
-<img width="1885" height="911" alt="azure-homepage" src="" />
+<img width="1885" height="911" alt="azure-homepage" src="https://github.com/kryshamaegarcia50-byte/CC101-kgarcia/blob/main/Laboratory-03-Multi-Cloud-Explorer/screenshots/azure-homepage.png?raw=true" />
 
