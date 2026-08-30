@@ -31,6 +31,5 @@ Azure is commonly used for enterprise applications, virtual machines, databases,
 
 ## Screenshot
 
-![Microsoft Azure Official Homepage](screenshots/azure.png)
+<img width="1885" height="911" alt="azure-homepage" src="" />
 
-*Figure 1. Microsoft Azure official website or management portal.*
