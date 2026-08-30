@@ -1,5 +1,5 @@
 
-- ## Checkpoint 7 – Continue Your Linux Investigation
+ ## Checkpoint 7 – Continue Your Linux Investigation
 
 ### Linux Server Information
 
