@@ -38,18 +38,4 @@ The mission of a Cloud Operations Engineer is to monitor the health and performa
 - **Resource Monitoring:** Used `docker stats` to measure container CPU and memory consumption.
 - **Technical Documentation:** Practiced recording monitoring results and organizing screenshots as evidence.
 
-## Conclusion
 
-This laboratory helped me understand the importance of monitoring server resources, application activity, and container performance. I learned that checking system health, reviewing logs, and monitoring resource consumption can help cloud operations engineers detect problems and troubleshoot them before they affect users.
-## Skills Learned
-- Linux system monitoring
-- System resource analysis
-- Container observability
-- Technical documentation
-- Version control using Git and GitHub
-
-## Mission Files
-- system-baseline-report.md
-- container-observability.md
-- reflection.md
-- screenshots/
