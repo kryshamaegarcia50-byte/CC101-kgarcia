@@ -1,62 +1,84 @@
 # Backup Script Guide
 
-## 1. What Is a Backup?
-A backup is a copy of important files that can be restored if the original files are lost, damaged, or accidentally deleted.
+## 1. Purpose of the Backup Script
 
-## 2. Purpose of the Backup Script
-The backup script automatically creates a compressed copy of the client's application data. It saves time and helps protect important information.
+The backup script automates the process of creating a compressed backup of the client's application data. It saves time, reduces repetitive manual work, and helps protect important files from accidental loss.
 
-## 3. Bash Backup Script
-The following script creates a timestamped backup of the app-data folder.
+## 2. Full Backup Script
 
-    #!/bin/bash
-    # Automated Backup Script for CloudNova Technologies
+The following is the complete Bash script used in this laboratory.
 
-    SOURCE_DIR="app-data"
-    BACKUP_DIR="backups"
-    TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+```bash
+#!/bin/bash
+# Automated Backup Script for CloudNova Technologies
 
-    echo "Initiating automated backup..."
+SOURCE_DIR="app-data"
+BACKUP_DIR="backups"
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 
-    mkdir -p "$BACKUP_DIR"
+echo "Initiating automated backup..."
 
-    tar -czf "$BACKUP_DIR/backup_$TIMESTAMP.tar.gz" "$SOURCE_DIR"
+# Create the backup directory if it does not exist
+mkdir -p "$BACKUP_DIR"
 
-    echo "Backup completed successfully at $TIMESTAMP!"
+# Compress the source directory into a tarball (.tar.gz)
+tar -czf "$BACKUP_DIR/backup_$TIMESTAMP.tar.gz" "$SOURCE_DIR"
 
-## 4. Explanation of the Commands
-- `#!/bin/bash` tells Linux to use Bash to execute the script.
-- `SOURCE_DIR` stores the name of the folder containing the client data.
-- `BACKUP_DIR` specifies where the backup files will be saved.
-- `TIMESTAMP` adds the current date and time to the backup filename.
-- `mkdir -p` creates the backup directory if it does not exist.
-- `tar -czf` creates a compressed `.tar.gz` archive.
+echo "Backup completed successfully at $TIMESTAMP!"
+```
+
+## 3. Explanation of the Script
+
+- `#!/bin/bash` tells the operating system to use Bash to execute the script.
+- `SOURCE_DIR="app-data"` defines the folder containing the client's data.
+- `BACKUP_DIR="backups"` defines where the backup archives will be stored.
+- `TIMESTAMP=$(date +"%Y%m%d_%H%M%S")` generates a timestamp for each backup filename.
 - `echo` displays messages in the terminal.
+- `mkdir -p "$BACKUP_DIR"` creates the backup directory if it does not already exist.
+- `tar -czf` creates a compressed `.tar.gz` archive containing the source directory.
 
-## 5. Test Data
-The sample file is `app-data/data.txt`. Its content is:
+## 4. File Permissions: chmod +x
 
-    This is critical client data.
+The command `chmod +x backup.sh` adds execute permission to the backup script. This allows the user to run the script directly with `./backup.sh` instead of receiving a permission-denied error, provided the user also has the necessary access to the file and its directory.
 
-This represents important client information that needs protection.
+## 5. Cron Job Schedule
 
-## 6. Verify the Backup
-To list the backup archives, run:
+The cron expression used for this laboratory is:
 
-    ls -lh backups/
+```cron
+0 2 * * * /root/CC101-kgarcia/Laboratory-09-Cloud-Automation-Engineer/backup.sh
+```
 
-To inspect a specific archive, run:
+This schedules the backup script to run every day at 2:00 AM, using the full path to the script in the KillerCoda environment.
 
-    tar -tzf backups/backup_YYYYMMDD_HHMMSS.tar.gz
+### Breakdown of the Five Time Fields
 
-Replace the example filename with an actual backup filename. The archive should contain `app-data/` and `app-data/data.txt`.
+| Field | Value | Meaning |
+|---|---|---|
+| Minute | `0` | Runs at minute zero. |
+| Hour | `2` | Runs at 2 AM. |
+| Day of Month | `*` | Runs every day of the month. |
+| Month | `*` | Runs every month. |
+| Day of Week | `*` | Runs every day of the week. |
 
-## 7. Cron Job Scheduling
-A cron job can run the backup script automatically every day at 2:00 AM.
+The five fields determine when the scheduled command runs. The command after those fields identifies the script to execute.
 
-    0 2 * * * /root/CC101-kgarcia/Laboratory-09-Cloud-Automation-Engineer/backup.sh
+## 6. Testing and Verification
 
-The computer must be running and the cron service must be active for the scheduled task to execute.
+The following commands were used to create, run, and verify the backup:
 
-## 8. Conclusion
-Backup automation helps cloud engineers save time and protect important data. Backup files should be verified regularly, stored securely, and tested to ensure that they can be restored.
+```bash
+mkdir -p app-data
+echo "This is critical client data." > app-data/data.txt
+chmod +x backup.sh
+./backup.sh
+ls -lh backups/
+tar -tzf backups/backup_20261017_051806.tar.gz
+crontab -l
+```
+
+The archive listing should contain `app-data/` and `app-data/data.txt`. The timestamped archive filename may differ depending on when the script runs.
+
+## 7. Conclusion
+
+Bash scripting and cron scheduling help cloud engineers automate routine backup operations. The executable permission allows the script to run directly, while cron can schedule it to execute automatically. Backup archives should be verified regularly, stored securely, and tested for successful restoration.
