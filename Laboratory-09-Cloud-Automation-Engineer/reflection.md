@@ -1,0 +1,11 @@
+# Mission Reflection
+
+Cloud automation is critical when managing hundreds of cloud servers because it saves time, reduces repetitive work, and makes tasks more consistent. Instead of configuring every server manually, cloud engineers can use scripts to perform backups, install software, and maintain systems more efficiently. Automation also helps organizations manage large infrastructures with fewer manual errors.
+
+However, automation can be dangerous when scripts are not tested carefully. For example, a destructive typo in a script scheduled to run on 1,000 servers could delete important files or damage configurations across the entire environment. This could cause service interruptions, data loss, and expensive recovery work. To prevent these problems, engineers should test scripts in a safe environment, review commands carefully, limit permissions, and maintain reliable backups.
+
+Writing a Bash script in this laboratory was different from creating a Docker Compose YAML file in Mission 6. Bash uses commands and variables to perform tasks step by step, such as creating and compressing backup files. Docker Compose uses YAML to describe services, configurations, networks, and other settings for an application. Bash focuses on executing tasks, while Docker Compose focuses on defining how application containers work together.
+
+From Laboratory 1 to Laboratory 9, my understanding of cloud computing has grown from learning basic Linux commands and system information to exploring infrastructure, multiple cloud platforms, containers, deployment, monitoring, security, and automation. I now understand that cloud computing involves more than simply storing files online. It also requires planning, protecting, deploying, monitoring, and maintaining reliable systems.
+
+The role I enjoyed most was the Cloud-Native Engineer because I liked learning how containers and application services work together. Deploying applications using Docker Compose helped me understand how software can run in a consistent environment. Overall, these laboratories improved my technical knowledge and gave me more confidence in using Linux, Docker, and GitHub. I also learned that cloud engineers must be careful, responsible, and willing to keep learning as technology changes.
