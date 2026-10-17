@@ -45,3 +45,37 @@ Location: `screenshots/firewall-activated.png`
 
 ## Conclusion
 UFW helps control network access to the server. Allowing SSH before enabling the firewall helps preserve administrative access, while the default-deny incoming policy reduces exposure to unnecessary connections.
+
+## Checkpoint 5: Granular Port Management
+
+### Objective
+Allow legitimate web traffic through TCP port 8080 while keeping the default-deny incoming policy.
+
+### Firewall Rule
+Command used:
+
+`sudo ufw allow 8080/tcp`
+
+This rule allows incoming TCP connections on port 8080.
+
+### Verification
+Command used:
+
+`sudo ufw status numbered`
+
+The numbered output was used to verify the SSH and TCP port 8080 rules.
+
+### Application Test
+Command used:
+
+`curl http://localhost:8080`
+
+A successful response containing the Nginx HTML confirms that the application responds locally. This local test alone does not verify remote firewall access.
+
+### Screenshot
+Filename: `firewall-port-allowed.png`
+
+Location: `screenshots/firewall-port-allowed.png`
+
+### Conclusion
+Explicitly allowing TCP port 8080 makes the web service accessible through that configured firewall rule while other incoming traffic remains denied by default, unless another rule allows it.
