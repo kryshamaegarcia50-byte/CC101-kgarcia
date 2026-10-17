@@ -1,24 +1,19 @@
 # Security Audit Report
 
-## Objective
-To inspect the Linux environment and identify basic security information.
+## Checkpoint 2: Research — Security Best Practices
 
-## Audit Commands
-- `whoami` - Displays the current user.
-- `uname -a` - Displays operating system and kernel information.
-- `id` - Displays user and group IDs.
-- `ss -tuln` - Lists listening network ports.
-- `sudo ufw status` - Checks firewall status.
+### 1. Principle of Least Privilege (PoLP)
 
-## Findings
-These commands help inspect the operating system, current user permissions, listening ports, and firewall status.
+The Principle of Least Privilege means giving users and applications only the permissions they need to perform their assigned tasks. It is important for cloud accounts because it reduces the risk of unauthorized access, accidental changes, and damage if an account is compromised. For example, a user who only needs to view files should not automatically receive permission to delete them or manage the entire cloud environment.
 
-## Recommendations
-- Use strong passwords.
-- Apply system updates regularly.
-- Disable unnecessary services.
-- Allow only necessary network ports.
-- Review user permissions regularly.
+### 2. Attack Surface
+
+The attack surface is the collection of entry points that an attacker could potentially use to access or compromise a virtual machine. These may include open network ports, running services, applications, user accounts, and outdated software. Reducing unnecessary services, closing unused ports, and applying security updates can help make the virtual machine more secure.
+
+### 3. Default Deny Policy
+
+A Default Deny Policy means blocking network traffic unless a specific rule allows it. This is safer than trying to block individual hackers because new or unknown threats may appear from many different addresses. By allowing only the connections that are necessary, administrators can reduce unauthorized access and limit the services exposed to potential attackers.
 
 ## Conclusion
-A basic security audit helps identify areas that may need improvement and supports safer system administration.
+
+These three security practices help protect cloud infrastructure. Least privilege limits permissions, reducing the attack surface removes unnecessary entry points, and default deny restricts network traffic to explicitly approved connections. Applying these practices can reduce security risks and help maintain a safer cloud environment.
