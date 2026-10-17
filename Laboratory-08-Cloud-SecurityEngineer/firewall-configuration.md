@@ -1,22 +1,47 @@
 # Firewall Configuration
 
 ## Objective
-To understand how a Linux firewall protects a system by controlling network traffic.
-
-## Firewall Tool
-UFW (Uncomplicated Firewall) is a Linux tool used to manage firewall rules.
+Configure UFW to restrict incoming traffic and allow outgoing traffic.
 
 ## Commands Used
-- `sudo ufw status` - Checks whether UFW is active.
-- `sudo ufw status verbose` - Displays detailed firewall status.
-- `sudo ufw app list` - Lists available application profiles.
 
-## Security Best Practices
-- Allow only necessary network ports.
-- Restrict SSH access to trusted users and networks.
-- Review firewall rules regularly.
-- Avoid exposing unnecessary services.
-- Verify access requirements before changing firewall settings.
+### 1. Allow SSH
+`sudo ufw allow ssh`
+
+This allows incoming SSH connections on the configured SSH port.
+
+### 2. Deny Incoming Traffic by Default
+`sudo ufw default deny incoming`
+
+This blocks incoming traffic unless a rule explicitly permits it.
+
+### 3. Allow Outgoing Traffic
+`sudo ufw default allow outgoing`
+
+This allows outgoing network connections.
+
+### 4. Enable UFW
+`sudo ufw enable`
+
+This activates the firewall.
+
+### 5. Verify Firewall Status
+`sudo ufw status verbose`
+
+This displays whether UFW is active, the default policies, and configured rules.
+
+## Expected Security Configuration
+- Firewall status: Active
+- Default incoming policy: Deny
+- Default outgoing policy: Allow
+- SSH access: Allowed
+
+Actual results should be confirmed using the terminal output.
+
+## Screenshot
+Filename: `firewall-activated.png`
+
+Location: `screenshots/firewall-activated.png`
 
 ## Conclusion
-Firewall rules help protect systems against unauthorized network access. Rules should be reviewed carefully before they are applied.
+UFW helps control network access to the server. Allowing SSH before enabling the firewall helps preserve administrative access, while the default-deny incoming policy reduces exposure to unnecessary connections.
