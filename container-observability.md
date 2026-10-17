@@ -1,4 +1,20 @@
-# Container Observability
+Real-Time Container Metrics
+
+Container Name: clientwebsite
+
+Memory Usage: 2.73MiB
+
+Memory Limit: 1.859GiB
+
+Memory Percentage: 0.14%
+
+CPU Usage: 0.00%
+
+Network I/O: 3.84kB / 5.29kB
+
+Block I/O: 0B / 12.3kB
+
+PIDs: 2# Container Observability
 
 ## Application Logs
 
